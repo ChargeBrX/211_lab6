@@ -10,7 +10,7 @@ int main()
 
     for(i=0; i<n; i++)
     {
-        a[n] = 0;
+        a[i] = 0;
     }
 
     do
@@ -19,14 +19,13 @@ int main()
         if(od == 'U')
         {
             a[i-1] = z;
-            printf("%d\n",a[i-1]);
         }
         else
         {
-                printf("%d %d %d\n",i-1,i,z-1);
                 maxx = a[i-1];
-                for(j=i;j<z-1;j++)
+                for(j=i;j<z;j++)
                 {
+
                     if(maxx<a[j])
                     {
                         maxx = a[j];
