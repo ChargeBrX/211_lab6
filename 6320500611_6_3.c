@@ -32,12 +32,16 @@ int main()
                     }
                 }
                 max[k] = maxx;
-                printf("%d\n",max[k]);
                 k++;
 
         }
         x++;
     }
     while(x<q);
+
+    for(i=0;i<k;i++)
+    {
+        printf("%d\n",max[i]);
+    }
 
 }
